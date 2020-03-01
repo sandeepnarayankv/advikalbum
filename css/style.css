@@ -67,34 +67,40 @@ h3{
 
 article {
   background-color: inherit;
+}
+
+.topContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
   border: 3px double red;
   border-radius:10px;
   padding: 10px;
 }
 
-.vidContainer{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-video.vids{
-  width: 30%;
-  height:350px;
-  margin:1.6667%;
-}
-
-.topContainer{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 figure.flexbox{
-  width: 30%;
-  height: auto;
-  max-height: 350px;
-  margin:1.6667%;
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+video.flexbox{
+  display: grid;
+  grid-template-columns: minmax(450px, 1fr);
+  grid-template-rows: minmax(350px, 1fr);
+  grid-gap: 20px;
+  padding: 10px;
+  border: 3px solid red;
+}
+
+img{
+  max-width: 300px;
+  max-height:350px;
+  margin:20px;
+  padding: 10px;
+  border: 3px solid red;
 }
 
 footer p{
